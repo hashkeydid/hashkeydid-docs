@@ -13,10 +13,9 @@ We are familiar with DNS resolution which is to resolve the domain name to the I
 DID reverse resolution information are stored in the DID registry contract. When a user register DID, the mapping relationship between DID and user address will be recorded in the `tokenId2Did` mapping table. Although we retain the mapping relationship, it is up to the user to decide whether to use the reverse resolution. When the user needs to use reverse resolution, he can call the following function in the Resolver contract to turn on, which is unavailable by default.
 
 ```solidity
-function setReverse(address _addr, bool isReverse) public;
+function setReverse(bool isReverse) public;
 ```
 
-* addr: set reverse resolution for addr
 * isReverse: true/false
 
 #### Get reverse resolution
