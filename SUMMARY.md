@@ -17,3 +17,4 @@
 * [KYC](developer-guide/kyc.md)
 * [Credential](developer-guide/credential.md)
 * [DID as NFT](developer-guide/did-as-nft.md)
+* [OpenAPI](developer-guide/openapi.md)
