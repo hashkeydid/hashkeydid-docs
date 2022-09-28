@@ -22,7 +22,7 @@ Check if user already has a HashKey DID
 
 ```ts
 {
-  // 用户的0x地址
+  // 0x address
   addr: string
 }
 ```
