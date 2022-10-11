@@ -2,7 +2,7 @@
 
 > Version 1.0
 
-Hashkey DID API for public
+HashKey DID API for public
 
 ## Path Details
 
