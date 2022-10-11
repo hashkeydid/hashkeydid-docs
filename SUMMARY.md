@@ -1,8 +1,9 @@
 # Table of contents
 
-* [Introducation](README.md)
+* [Introduction](README.md)
 * [Terminology](terminology.md)
 * [FAQ](faq.md)
+* [Deployment](deployments.md)
 
 ## Developer Guide
 
