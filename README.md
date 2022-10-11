@@ -1,4 +1,4 @@
-# Introducation
+# Introduction
 
 HashKey DID is a decentralized identity project in web3.0. It is an NFT based decentralized identity with features of decentralized storage and privacy. HashKey DID has lived on multiple blockchain, like Ethereum, PlatON, Klaytn, Polygon etc.
 
