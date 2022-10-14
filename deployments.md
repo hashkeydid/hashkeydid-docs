@@ -2,7 +2,7 @@
 
 ### Deployment
 
-At present, the main smart contracts are deployed on platON, and they are all deployed in the form of proxy. This method is beneficial to the upgrade of the later contract without affecting the data already stored on the chain. It only needs to change the address of the logic contract.
+At present, the main smart contracts are deployed on PlatON, and they are all deployed in the form of proxy. This method is beneficial to the upgrade of the later contract without affecting the data already stored on the chain. It only needs to change the address of the logic contract.
 
 ### Contract deployment list
 
@@ -20,12 +20,12 @@ PlatON Testnet
 
 | Contract     | Address |
 | ------------ | ------- |
-| DID          |         |
-| DID Resolver |         |
+| DID          | 0xfA6a266CdDB56b30Cf2F7C5b45b458008B1B637F |
+| DID Resolver | 0x3d8BA78B78564dC36dAcbe55FeB6c6A6464FA0a1 |
 
-Klaytn&#x20;
+Klaytn
 
 | Contract          | Address                                    |
 | ----------------- | ------------------------------------------ |
-| Credential Center |                                            |
+| Credential Center | 0x3cB89e8540CD78c62Bcf4f91A90156BFEF309CE0 |
 | Klaytn Credential | 0xe0e03f633a78797c6ceb996fcc7c1621a570a98d |
