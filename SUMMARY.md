@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Terminology](terminology.md)
+* [✋ To be an issuer](to-be-an-issuer.md)
 * [FAQ](faq.md)
 * [Deployment](deployments.md)
 
