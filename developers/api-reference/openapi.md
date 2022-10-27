@@ -1,4 +1,4 @@
-# Hashkey DID OpenAPI
+# HashKey DID OpenAPI
 
 > Version 1.0
 
@@ -50,7 +50,7 @@ Check if user already has a HashKey DID
     status?: string
     // true is existed
     exitFlag?: boolean
-    // User's DID when existed.
+    // User'guides DID when existed.
     did?: string
   }
   msg?: string
@@ -138,9 +138,9 @@ Register a user, and we will airdrop a DID to user on PlatON.
 {
   // 0x address
   addr?: string
-  // User's DID, only can contains a-z, 0-9, at least 5 characters.
+  // User'guides DID, only can contains a-z, 0-9, at least 5 characters.
   did?: string
-  // User's nickname
+  // User'guides nickname
   nickname?: string
   // 1-8, other value will be the default background, same as 1
   backgroundNumber?: integer

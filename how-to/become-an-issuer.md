@@ -1,4 +1,4 @@
-# ✋ To be an issuer
+# Become an issuer
 
 Dear users,&#x20;
 
