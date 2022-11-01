@@ -5,7 +5,7 @@ _**You need to let us know the information below in the email:**_
 
 #### Subject: Apply for Credential Issuer
 
-* `Applicant*`: Let us know who you are.
+* `Applicant`: Let us know who you are.
 * `Reference link`: Show your site.
-* `Wallet Address*`: Suggest using 0x address. This address will be used to enable the issuer's permissions in order to manage your credential.
-* `Content*`: Please describe the purpose of the credential.
+* `Wallet Address`: Suggest using 0x address. This address will be used to enable the issuer's permissions in order to manage your credential.
+* `Content`: Please describe the purpose of the credential.
