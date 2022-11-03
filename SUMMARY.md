@@ -35,6 +35,5 @@
 
 ## How to
 
-* [Become an issuer](how-to/become-an-issuer.md)
 * [Issue a credential](how-to/issuer-a-credential.md)
 * [Become a KYC provider](how-to/become-a-kyc-provider.md)
