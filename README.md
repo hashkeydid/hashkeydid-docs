@@ -39,4 +39,4 @@ For DAPP developers and contract developers, HashKey DID document provide compre
 Check out the Contract Developer Guide, starting with [ContractAPI](protocol/contract-api-reference/)
 
 **I'm DAPP developer and I want HashKey DID support to my DAPP**\
-Check out the DAPP Developer Guide, starting with [Developer](developer-guide)
+Check out the DAPP Developer Guide, starting with [Developer](developers/guides)
