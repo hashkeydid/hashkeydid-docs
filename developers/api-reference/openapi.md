@@ -6,7 +6,7 @@ HashKey DID API for public
 
 ## Path Details
 
-***
+- API Endpoint: https://api.hashkey.id/did/api
 
 ### [POST]/user/didExist
 
