@@ -12,8 +12,6 @@
   * [Authentication](developers/guides/authentication.md)
   * [Query](developers/guides/query.md)
   * [Libraries](developers/guides/libraries.md)
-* [Integration](developers/integration/README.md)
-  * [HashKey DID Register Integration](developers/integration/register-integration-process.md)
 * [API Reference](developers/api-reference/README.md)
   * [OpenAPI](developers/api-reference/openapi.md)
 
