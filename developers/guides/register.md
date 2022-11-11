@@ -31,13 +31,13 @@ For DID registration, user need provide information below:
 	 
 ### Check DID Exist
 
-Invoke [Check DID Exist API](../api-reference/openapi#get-user-didexistchain) to check if DID exist on chain.
+Invoke [Check DID Exist API](../api-reference/openapi.md#get-user-didexistchain) to check if DID exist on chain.
 
 ### Register and Claim DID
 
-Invoke [Get Register Claim Sign Text](../api-reference/openapi#get-user-getregisterclaimsigntext) to get sign text.
+Invoke [Get Register Claim Sign Text](../api-reference/openapi.md#get-user-getregisterclaimsigntext) to get sign text.
 
 Let user do personal_sign to whole signText
 
-And using sign result and signId to invoke [Register And Claim](../api-reference/openapi#post-user-registerandclaim) to register and claim a DID .
+And using sign result and signId to invoke [Register And Claim](../api-reference/openapi.md#post-user-registerandclaim) to register and claim a DID .
 
