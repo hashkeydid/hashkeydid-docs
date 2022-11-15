@@ -22,7 +22,7 @@ Credential records the unique on-chain footprints of individuals, "freezes" user
 
 ### HashKey DID Architecture
 
-&#x20;The above is HashKey DID smart contract architecture. The smart contract collect these information:
+The above is HashKey DID smart contract architecture. The smart contract collect these information:
 
 * The owner of this name
 * Credentials related to that address
@@ -39,4 +39,4 @@ For DAPP developers and contract developers, HashKey DID document provide compre
 Check out the Contract Developer Guide, starting with [ContractAPI](protocol/contract-api-reference/)
 
 **I'm DAPP developer and I want HashKey DID support to my DAPP**\
-Check out the DAPP Developer Guide, starting with [Developer](developers/guides)
+Check out the DAPP Developer Guide, starting with [Developer](broken-reference)

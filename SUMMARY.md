@@ -17,7 +17,6 @@
 
 ## Protocol
 
-* [Introduction](protocol/README.md)
 * [Resolver](protocol/resolver.md)
 * [KYC](protocol/kyc.md)
 * [Credential](protocol/credential.md)
