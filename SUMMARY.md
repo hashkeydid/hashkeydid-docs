@@ -33,3 +33,7 @@
 
 * [Issue a credential](how-to/issuer-a-credential.md)
 * [Become a KYC provider](how-to/become-a-kyc-provider.md)
+
+## Support
+
+* [Brand Kit](support/brand-kit.md)
