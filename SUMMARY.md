@@ -7,9 +7,7 @@
 ## Developers
 
 * [Guides](developers/guides/README.md)
-  * [Concepts](developers/guides/concepts.md)
   * [Register](developers/guides/register.md)
-  * [Authentication](developers/guides/authentication.md)
   * [Query](developers/guides/query.md)
   * [Libraries](developers/guides/libraries.md)
 * [API Reference](developers/api-reference/README.md)
