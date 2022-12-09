@@ -7,7 +7,7 @@ Query tokenId's all authorized addrs
 ```javascript
 import {GetAuthorizedAddrs} from "hashkeydid-js"
 // tokenId: 1222
-// overrides: {"blockTag": 16513266} (search from block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
 async function QueryAuthorizedAddrs(){
     let addrs = await GetAuthorizedAddrs(1222, {"blockTag": 16513266})
 }
@@ -48,7 +48,7 @@ Query tokenId's DID
 ```javascript
 import {TokenId2Did} from "hashkeydid-js"
 // tokenId: 1222
-// overrides: {"blockTag": 16513266} (search from block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
 async function QueryTokenIdByDid(){
     let did = await TokenId2Did(1222, {"blockTag": 16513266})
 }
@@ -67,7 +67,7 @@ Query DID's tokenID
 ```javascript
 import {Did2TokenId} from "hashkeydid-js"
 // did name: terro.key
-// overrides: {"blockTag": 16513266} (search from block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
 async function QueryDidByTokenId(){
     let tokenId = await Did2TokenId("terro.key", {"blockTag": 16513266})
 }
@@ -86,7 +86,7 @@ Query deedgrain contract issuer
 ```javascript
 import {DeedGrainAddrToIssur} from "hashkeydid-js"
 // DeedGrain contract address: 0xteDBB6048b0B9107a21d81E345afe0789229DbTs
-// overrides: {"blockTag": 16513266} (search from block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
 async function QueryDeedGrainIssur(){
     let did = await DeedGrainAddrToIssur("0xteDBB6048b0B9107a21d81E345afe0789229DbTs", {"blockTag": 16513266})
 }
@@ -106,7 +106,7 @@ Query DID's name by address
 ```javascript
 import {GetDIDNameByAddr} from "hashkeydid-js"
 // DID address: 0xteDBB6048b0B9107a21d81E345afe0789229DbTs
-// overrides: {"blockTag": 16513266} (search from block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
 async function QueryDIDNameByAddr(){
     let did = await GetDIDNameByAddr("0xteDBB6048b0B9107a21d81E345afe0789229DbTs", {"blockTag": 16513266})
 }
@@ -125,7 +125,7 @@ Query DID's name by address force
 ```javascript
 import {GetDIDNameByAddrForce} from "hashkeydid-js"
 // DID address: 0xteDBB6048b0B9107a21d81E345afe0789229DbTs
-// overrides: {"blockTag": 16513266} (search from block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
 async function QueryDIDNameByAddrForce(){
     let did = await GetDIDNameByAddrForce("0xteDBB6048b0B9107a21d81E345afe0789229DbTs", {"blockTag": 16513266})
 }
@@ -210,6 +210,117 @@ async function QueryText(){
 
 {% endtab %}
 {% endtabs %}
+
+Query DID's metadata image url
+
+{% tabs %}
+{% tab title="JS" %}
+<pre class="language-javascript"><code class="lang-javascript"><strong>import {GetMetadataImageByDIDName} from "hashkeydid-js"
+</strong>// did: terro.key
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
+async function QueryMetadataImageByDIDName(){
+    let imageUrl = await GetMetadataImageByDIDName("terro.key", {"blockTag": 16513266})
+}
+
+</code></pre>
+{% endtab %}
+
+{% tab title="GO" %}
+
+{% endtab %}
+{% endtabs %}
+
+Query tokenId's metadata image url
+
+{% tabs %}
+{% tab title="JS" %}
+```javascript
+import {GetMetadataImageByTokenId} from "hashkeydid-js"
+// tokenId: 1222
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
+async function QueryMetadataImageByTokenId(){
+    let imageUrl = await GetMetadataImageByTokenId(1222, {"blockTag": 16513266})
+}
+```
+{% endtab %}
+
+{% tab title="GO" %}
+
+{% endtab %}
+{% endtabs %}
+
+Query DID's avatar url.&#x20;
+
+we'v already provided four blockchains info about `chainList` pramater
+
+```json
+{
+    "1":      {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"},
+    "137":    {"network": "Polygon", "RPC": "https://matic-mainnet-archive-rpc.bwarelabs.com"},
+    "8217":   {"network": "Klaytn", "RPC": "https://klaytn01.fandom.finance"},
+    "210425": {"network": "PlatON", "RPC": "https://openapi2.platon.network/rpc"},
+}
+```
+
+{% tabs %}
+{% tab title="JS" %}
+```javascript
+import {GetAvatarByDIDName} from "hashkeydid-js"
+// did: terro.key
+// chainList(optional): {"1": {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"}}
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
+async function QueryAvatarByDIDName(){
+    let avatarUrl = await GetAvatarByDIDName("terro.key", {"1": {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"}}, {"blockTag": 16513266})
+}
+```
+{% endtab %}
+
+{% tab title="GO" %}
+
+{% endtab %}
+{% endtabs %}
+
+Query tokenId's avatar url
+
+{% tabs %}
+{% tab title="JS" %}
+```javascript
+import {GetAvatarByTokenId} from "hashkeydid-js"
+// tokenId: 1222
+// chainList(optional): {"1": {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"}}
+// overrides(optional): {"blockTag": 16513266} (search from block number 16513266)
+async function QueryAvatarByTokenId(){
+    let avatarUrl = await GetAvatarByTokenId(1222, {"1": {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"}}, {"blockTag": 16513266})
+}
+```
+{% endtab %}
+
+{% tab title="GO" %}
+
+{% endtab %}
+{% endtabs %}
+
+Query tokenId's metadata
+
+{% tabs %}
+{% tab title="JS" %}
+```javascript
+import {GetMetadata} from "hashkeydid-js"
+// tokenId: 1222
+async function QueryMetadata(){
+    let metadata = await GetMetadata(1222)
+}
+```
+{% endtab %}
+
+{% tab title="GO" %}
+
+{% endtab %}
+{% endtabs %}
+
+
+
+
 
 
 
