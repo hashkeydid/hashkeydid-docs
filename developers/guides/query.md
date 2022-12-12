@@ -21,7 +21,7 @@ async function QueryTokenIdByDid(){
 {% endtab %}
 {% endtabs %}
 
-### Query DID's tokenId
+### Query DID tokenId
 
 Query user's tokenId by DID name, you can note the specific block by `overrides` parameter.
 
@@ -81,7 +81,7 @@ func QueryDIDNameByAddr(){
 {% endtab %}
 {% endtabs %}
 
-### Query DID's name by address force
+### Query DID name by address force
 
 Query DID name by DID address force even if the resolver is false, you can note the specific block by `overrides/opts` parameter.
 
@@ -120,7 +120,7 @@ func QueryDIDNameByAddrForce(){
 {% endtab %}
 {% endtabs %}
 
-### Query DID's address by DID name
+### Query DID address by DID name
 
 Query DID address by DID name,  you can note the specific block by `overrides/opts` parameter.
 
@@ -141,7 +141,7 @@ async function QueryAddrByDIDName(){
 {% endtab %}
 {% endtabs %}
 
-### Query DID's KYC information
+### Query DID KYC information
 
 Query user's KYC information by `tokenId`, `KYCProvider`, `KYCId and` note the specific block by  `overrides/opts` parameters.
 
@@ -184,7 +184,7 @@ func QueryKYCInfo(){
 
 
 
-### Query DID's metadata avatar image url
+### Query DID metadata avatar image url
 
 Query DID user's metadata avatar url, you can note the specific block by `overrides/opts` parameter.
 
@@ -222,7 +222,7 @@ func QueryMetadataImageByDIDName(){
 {% endtab %}
 {% endtabs %}
 
-### Query DID's resolver avatar url.&#x20;
+### Query DID resolver avatar url.&#x20;
 
 we'v already provided four blockchains info about `chainList` pramater, you can also customize the chain information according to the following format
 
@@ -271,7 +271,7 @@ func QueryResolverAvatarByDIDName(){
 {% endtab %}
 {% endtabs %}
 
-### Query DID's address based on different blockchain
+### Query DID address based on different blockchain
 
 User can bond the address for different chains to DID account, and use the following method to query address information with `coinType` parameter.
 
