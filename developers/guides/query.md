@@ -1,6 +1,6 @@
 # Query
 
-### Query tokenId's DID
+### Query DID name
 
 Query user's DID name by `tokenId`, you can note the specific block by `overrides` parameter.
 
@@ -143,7 +143,7 @@ async function QueryAddrByDIDName(){
 {% endtab %}
 {% endtabs %}
 
-### Query tokenId's KYC information
+### Query DID's KYC information
 
 Query user's KYC information by `tokenId`, `KYCProvider`, `KYCId and` note the specific block by  `overrides/opts` parameter.
 
