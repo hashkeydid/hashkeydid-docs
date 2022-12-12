@@ -126,20 +126,18 @@ Query DID address by DID name,  you can note the specific block by `overrides/op
 
 {% tabs %}
 {% tab title="JS" %}
-```javascript
+```go
 import {GetAddrByDIDName} from "hashkeydid-js"
 // DID name: herro.key
 // overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
 async function QueryAddrByDIDName(){
     let addr = await GetAddrByDIDName("herro.key", {"blockTag": 16513266})
-}j
-
+}
 ```
 {% endtab %}
 
-{% tab title="Go" %}
-```go
-```
+{% tab title="GO" %}
+
 {% endtab %}
 {% endtabs %}
 
