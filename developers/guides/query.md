@@ -145,11 +145,11 @@ async function QueryAddrByDIDName(){
 
 ### Query DID's KYC information
 
-Query user's KYC information by `tokenId`, `KYCProvider`, `KYCId and` note the specific block by  `overrides/opts` parameter.
+Query user's KYC information by `tokenId`, `KYCProvider`, `KYCId and` note the specific block by  `overrides/opts` parameters.
 
 {% tabs %}
 {% tab title="JS" %}
-```javascript
+```go
 import {GetKYCInfo} from "hashkeydid-js"
 // tokenId: 1222
 // KYCProvider: 0xdeDBB6048b0B9107a21d81E345afe0789229Dbac
@@ -158,7 +158,6 @@ import {GetKYCInfo} from "hashkeydid-js"
 async function QueryKYCInfo(){
     let info = await GetKYCInfo(1222, "0xdeDBB6048b0B9107a21d81E345afe0789229Dbac", 1, {"blockTag": 16513266})
 }
-
 ```
 {% endtab %}
 
@@ -184,6 +183,8 @@ func QueryKYCInfo(){
 ```
 {% endtab %}
 {% endtabs %}
+
+
 
 ### Query DID's metadata avatar image url
 
