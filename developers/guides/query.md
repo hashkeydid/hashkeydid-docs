@@ -9,8 +9,8 @@ Query user's DID name by `tokenId`, you can note the specific block by `override
 ```javascript
 import {TokenId2Did} from "hashkeydid-js"
 // tokenId: 1222
-// overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
-async function QueryTokenIdByDid(){
+// overrides(optional): {"blockTag": 16513266} (search at block number 16513266)
+async function QueryDidByTokenId(){
     let did = await TokenId2Did(1222, {"blockTag": 16513266})
 }
 ```
@@ -30,8 +30,8 @@ Query user's tokenId by DID name, you can note the specific block by `overrides`
 ```javascript
 import {Did2TokenId} from "hashkeydid-js"
 // did name: terro.key
-// overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
-async function QueryDidByTokenId(){
+// overrides(optional): {"blockTag": 16513266} (search at block number 16513266)
+async function QueryTokenIdByDid(){
     let tokenId = await Did2TokenId("terro.key", {"blockTag": 16513266})
 }
 ```
@@ -51,7 +51,7 @@ Query DID name by DID address when you set resolver is true, you can note the sp
 ```javascript
 import {GetDIDNameByAddr} from "hashkeydid-js"
 // DID address: 0xteDBB6048b0B9107a21d81E345afe0789229DbTs
-// overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search at block number 16513266)
 async function QueryDIDNameByAddr(){
     let did = await GetDIDNameByAddr("0xteDBB6048b0B9107a21d81E345afe0789229DbTs", {"blockTag": 16513266})
 }
@@ -90,7 +90,7 @@ Query DID name by DID address force even if the resolver is false, you can note 
 ```javascript
 import {GetDIDNameByAddrForce} from "hashkeydid-js"
 // DID address: 0xteDBB6048b0B9107a21d81E345afe0789229DbTs
-// overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search at block number 16513266)
 async function QueryDIDNameByAddrForce(){
     let did = await GetDIDNameByAddrForce("0xteDBB6048b0B9107a21d81E345afe0789229DbTs", {"blockTag": 16513266})
 }
@@ -129,7 +129,7 @@ Query DID address by DID name,  you can note the specific block by `overrides/op
 ```go
 import {GetAddrByDIDName} from "hashkeydid-js"
 // DID name: herro.key
-// overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search at block number 16513266)
 async function QueryAddrByDIDName(){
     let addr = await GetAddrByDIDName("herro.key", {"blockTag": 16513266})
 }
@@ -152,7 +152,7 @@ import {GetKYCInfo} from "hashkeydid-js"
 // tokenId: 1222
 // KYCProvider: 0xdeDBB6048b0B9107a21d81E345afe0789229Dbac
 // KYCId: 1
-// overrides: {"blockTag": 16513266} (search in block number 16513266)
+// overrides: {"blockTag": 16513266} (search at block number 16513266)
 async function QueryKYCInfo(){
     let info = await GetKYCInfo(1222, "0xdeDBB6048b0B9107a21d81E345afe0789229Dbac", 1, {"blockTag": 16513266})
 }
@@ -192,7 +192,7 @@ Query DID user's metadata avatar url, you can note the specific block by `overri
 {% tab title="JS" %}
 <pre class="language-javascript"><code class="lang-javascript"><strong>import {GetMetadataImageByDIDName} from "hashkeydid-js"
 </strong>// did: terro.key
-// overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search at block number 16513266)
 async function QueryMetadataImageByDIDName(){
     let metadataAvatarUrl = await GetMetadataImageByDIDName("terro.key", {"blockTag": 16513266})
 }
@@ -241,7 +241,7 @@ we'v already provided four blockchains info about `chainList` pramater, you can 
 import {GetAvatarByDIDName} from "hashkeydid-js"
 // did: terro.key
 // chainList(optional): {"1": {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"}}
-// overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
+// overrides(optional): {"blockTag": 16513266} (search at block number 16513266)
 async function QueryResolverAvatarByDIDName(){
     let avatarUrl = await GetAvatarByDIDName("terro.key", {"1": {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"}}, {"blockTag": 16513266})
 }
