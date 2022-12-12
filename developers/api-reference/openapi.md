@@ -265,83 +265,48 @@ Get DID info
   code?: integer
   data: {
     id?: integer
+	// DID for user
     did?: string
+	// Address for user
     addr?: string
+	// Token ID for user in DID nft contract
     tokenId?: string
     userInfo: {
       userId?: integer
+	  // Nickname for user
       nickname?: string
+	  // DID card url for user. Full url with protocol and host.
       photoUrl?: string
+	  // User card background number
       backgroundNumber?: integer
+	  // User card backfrount number
       backfrontNumber?: integer
+	  // Avatar url for user. Full url with protocol and host.
       headUrl?: string
       photoParts?: string
-      createdAt?: string
-      updatedAt?: string
-      ldz?: string
     }
-    createdAt?: string
-    updatedAt?: string
-    status?: string
-    loginToken?: string
+	// User following count
     followingTotal?: integer
+	// User follower count
     followerTotal?: integer
+	// Time for DID claimed at
     claimAt?: string
-    chainName?: string
   }
   msg?: string
 }
 ```
-
-- Examples
-
-  - example-1
-
-```json
-{
-  "value": {
-    "code": 0,
-    "data": {
-      "id": 0,
-      "did": "string",
-      "addr": "string",
-      "tokenId": "string",
-      "userInfo": {
-        "userId": 0,
-        "nickname": "string",
-        "photoUrl": "string",
-        "backgroundNumber": 0,
-        "backfrontNumber": 0,
-        "headUrl": "string",
-        "photoParts": "string",
-        "createdAt": "string",
-        "updatedAt": "string",
-        "ldz": "string"
-      },
-      "createdAt": "string",
-      "updatedAt": "string",
-      "status": "string",
-      "loginToken": "string",
-      "followingTotal": 0,
-      "followerTotal": 0,
-      "claimAt": "string",
-      "chainName": "string"
-    },
-    "msg": "string"
-  }
-}
-```
-
-***
 
 ### [GET]/deedgrain/collected/credential/{did}
 
 - Summary  
 List OSTs for did
 
-#### RequestBody
+#### Responses
 
-- application/json
+- 200 OK
+
+`application/json`
+
 
 ```ts
 {
@@ -349,31 +314,40 @@ List OSTs for did
   data: {
     id?: integer
     userId?: integer
+    // OST name
     name?: string
     assetType?: integer
     assetValue?: integer
+    // OST index
     idIndex?: integer
+    // OST Contract Address
     contactAddr?: string
+    // OST Owner Address
     ownerAddr?: string
+    // OST Token ID
     tokenId?: string
+    // OST Metadata
     nftData?: string
+    // OST Mint transaction hash 
     txHash?: string
+	// Image URL for OST. Full URL with protocol and host
     imageUrl?: string
+	// External URL for OST if exists in metadata. Full URL with protocol and host
     externalUrl?: string
+	// Animation URL for OST if exists in metadata. Full URL with protocol and host
     animationUrl?: string
+	// Chain Name, any of ["Ethereum", "PlatON", "Klaytn"]
     chainName?: string
     deedgrainActivityId?: integer
     createdAt?: string
     updatedAt?: string
+	// Activity Key, if you want give user a mint link, you could use this key in url. Format is https://www.hashkey.id/credential/{activityKey}
     activityKey?: string
   }[]
   msg?: string
 }
 ```
 
-#### Responses
-
-***
 
 ### [GET]/deedgrain/collected/nft/{did}
 
