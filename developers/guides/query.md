@@ -44,7 +44,7 @@ async function QueryDidByTokenId(){
 
 ### Query DID name by address
 
-Query DID name by DID address when you set resolver is true, you can note the specific block by `overrides` parameter.
+Query DID name by DID address when you set resolver is true, you can note the specific block by  `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -59,13 +59,31 @@ async function QueryDIDNameByAddr(){
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	"github.com/ethereum/go-ethereum/common"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryDIDNameByAddr(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search in block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	name, err := core.GetDIDNameByAddr(opts, common.HexToAddress("0xa060C1C3807059027Ca141EFb63f19E12e0cBF0c"))
+}
+```
 {% endtab %}
 {% endtabs %}
 
 ### Query DID's name by address force
 
-Query DID name by DID address force even if the resolver is false, you can note the specific block by `overrides` parameter.
+Query DID name by DID address force even if the resolver is false, you can note the specific block by `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -80,13 +98,31 @@ async function QueryDIDNameByAddrForce(){
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+ 	"github.com/ethereum/go-ethereum/common"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryDIDNameByAddrForce(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search in block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	name, err := core.GetDIDNameByAddrForce(opts, common.HexToAddress("0xa060C1C3807059027Ca141EFb63f19E12e0cBF0c"))
+}
+```
 {% endtab %}
 {% endtabs %}
 
 ### Query DID's address by DID name
 
-Query DID address by DID name,  you can note the specific block by `overrides` parameter.
+Query DID address by DID name,  you can note the specific block by `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -102,13 +138,14 @@ async function QueryAddrByDIDName(){
 {% endtab %}
 
 {% tab title="Go" %}
-
+```go
+```
 {% endtab %}
 {% endtabs %}
 
 ### Query tokenId's KYC information
 
-Query user's KYC information by `tokenId`, `KYCProvider`, `KYCId and` note the specific block by `overrides` parameter.
+Query user's KYC information by `tokenId`, `KYCProvider`, `KYCId and` note the specific block by  `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -126,13 +163,31 @@ async function QueryKYCInfo(){
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	"github.com/ethereum/go-ethereum/common"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryKYCInfo(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search in block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	kycInfo, err := core.GetKYCInfo(opts, 1222, common.HexToAddress("0xdeDBB6048b0B9107a21d81E345afe0789229Dbac"),1)
+}
+```
 {% endtab %}
 {% endtabs %}
 
-### Query DID's metadata image url
+### Query DID's metadata avatar image url
 
-Query DID user's metadata image url, you can note the specific block by `overrides` parameter.
+Query DID user's metadata avatar url, you can note the specific block by `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -140,18 +195,35 @@ Query DID user's metadata image url, you can note the specific block by `overrid
 </strong>// did: terro.key
 // overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
 async function QueryMetadataImageByDIDName(){
-    let imageUrl = await GetMetadataImageByDIDName("terro.key", {"blockTag": 16513266})
+    let metadataAvatarUrl = await GetMetadataImageByDIDName("terro.key", {"blockTag": 16513266})
 }
 
 </code></pre>
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryMetadataImageByDIDName(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search in block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	metadataAvatarUrl, err := core.GetMetadataAvatarByDIDName(opts, "terro.key")
+}
+```
 {% endtab %}
 {% endtabs %}
 
-### Query DID's avatar url.&#x20;
+### Query DID's resolver avatar url.&#x20;
 
 we'v already provided four blockchains info about `chainList` pramater, you can also customize the chain information according to the following format
 
@@ -171,14 +243,32 @@ import {GetAvatarByDIDName} from "hashkeydid-js"
 // did: terro.key
 // chainList(optional): {"1": {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"}}
 // overrides(optional): {"blockTag": 16513266} (search in block number 16513266)
-async function QueryAvatarByDIDName(){
+async function QueryResolverAvatarByDIDName(){
     let avatarUrl = await GetAvatarByDIDName("terro.key", {"1": {"network": "Ethereum", "RPC": "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7"}}, {"blockTag": 16513266})
 }
 ```
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryResolverAvatarByDIDName(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search in block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	// ChainList: nil
+	avatarUrl, err := core.GetAvatarByDIDName(opts, "terro.key", nil)
+}
+```
 {% endtab %}
 {% endtabs %}
 
