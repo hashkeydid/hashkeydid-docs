@@ -2,7 +2,7 @@
 
 ### Query DID name
 
-Query user's DID name by `tokenId`, you can note the specific block by `overrides` parameter.
+Example code was used to query user's DID name by `tokenId and`you can note the specific block by `overrides` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -23,7 +23,7 @@ async function QueryDidByTokenId(){
 
 ### Query DID tokenId
 
-Query user's tokenId by DID name, you can note the specific block by `overrides` parameter.
+Code was used to query user's tokenId by DID name and you can note the specific block by `overrides` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -44,7 +44,7 @@ async function QueryTokenIdByDid(){
 
 ### Query DID name by address
 
-Query DID name by DID address when you set resolver is true, you can note the specific block by  `overrides/opts` parameter.
+Code was used to query DID name by DID address when you set resolver is true. you can note the specific block by  `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -83,7 +83,7 @@ func QueryDIDNameByAddr(){
 
 ### Query DID name by address force
 
-Query DID name by DID address force even if the resolver is false, you can note the specific block by `overrides/opts` parameter.
+Querying DID name by DID address force even if the resolver is false. you can note the specific block by `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -122,7 +122,7 @@ func QueryDIDNameByAddrForce(){
 
 ### Query DID address by DID name
 
-Query DID address by DID name,  you can note the specific block by `overrides/opts` parameter.
+Querying DID address by DID name. you can note the specific block by `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -143,7 +143,7 @@ async function QueryAddrByDIDName(){
 
 ### Query DID KYC information
 
-Query user's KYC information by `tokenId`, `KYCProvider`, `KYCId and` note the specific block by  `overrides/opts` parameters.
+Querying user's KYC information by `tokenId`, `KYCProvider`, `KYCId and` note the specific block by  `overrides/opts` parameters.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -186,7 +186,7 @@ func QueryKYCInfo(){
 
 ### Query DID metadata avatar image url
 
-Query DID user's metadata avatar url, you can note the specific block by `overrides/opts` parameter.
+Querying DID user's metadata avatar url and you can note the specific block by `overrides/opts` parameter.
 
 {% tabs %}
 {% tab title="JS" %}
@@ -224,7 +224,7 @@ func QueryMetadataImageByDIDName(){
 
 ### Query DID resolver avatar url.&#x20;
 
-we'v already provided four blockchains info about `chainList` pramater, you can also customize the chain information according to the following format
+We'v already provided four blockchains info about `chainList` pramater, you can also customize the chain information according to the following format
 
 ```json
 {
