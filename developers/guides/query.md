@@ -24,7 +24,7 @@ import (
 	hashkeydid "github.com/hashkeydid/hashkeydid-go"
 )
 
-func QueryTokenIdByDid(){
+func QueryDidByTokenId(){
 	core, err := hashkeydid.NewDIDCore(
 		hashkeydid.DefaultPlatONUrl, 
 		hashkeydid.DefaultDIDContractAddr, 
@@ -32,7 +32,7 @@ func QueryTokenIdByDid(){
 	)
 	// opts parameter is optional, it's for search at block number 16513266
 	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
-	tokenId, err := core.GetTokenIdByDid(opts, "terro.key")
+	did, err := core.GetDidByTokenId(opts, 1222)
 }
 ```
 {% endtab %}
@@ -62,7 +62,7 @@ import (
 	hashkeydid "github.com/hashkeydid/hashkeydid-go"
 )
 
-func QueryDidByTokenId(){
+func QueryTokenIdByDid(){
 	core, err := hashkeydid.NewDIDCore(
 		hashkeydid.DefaultPlatONUrl, 
 		hashkeydid.DefaultDIDContractAddr, 
@@ -70,9 +70,8 @@ func QueryDidByTokenId(){
 	)
 	// opts parameter is optional, it's for search at block number 16513266
 	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
-	did, err := core.GetDidByTokenId(opts, 1222)
+	tokenId, err := core.GetTokenIdByDid(opts, "terro.key")
 }
-
 ```
 {% endtab %}
 {% endtabs %}
