@@ -17,7 +17,24 @@ async function QueryDidByTokenId(){
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryTokenIdByDid(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search at block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	tokenId, err := core.GetTokenIdByDid(opts, "terro.key")
+}
+```
 {% endtab %}
 {% endtabs %}
 
@@ -38,7 +55,25 @@ async function QueryTokenIdByDid(){
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryDidByTokenId(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search at block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	did, err := core.GetDidByTokenId(opts, 1222)
+}
+
+```
 {% endtab %}
 {% endtabs %}
 
@@ -137,7 +172,25 @@ async function QueryAddrByDIDName(){
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryAddrByDIDName(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search at block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	addr, err := core.GetAddrByDIDName(opts, "terro.key")
+}
+
+```
 {% endtab %}
 {% endtabs %}
 
@@ -288,7 +341,25 @@ async function QueryBlockChainAddress(){
 {% endtab %}
 
 {% tab title="GO" %}
+```go
+import (
+	"math/big"
+	"github.com/ethereum/go-ethereum/accounts/abi/bind"
+	hashkeydid "github.com/hashkeydid/hashkeydid-go"
+)
 
+func QueryBlockChainAddress(){
+	core, err := hashkeydid.NewDIDCore(
+		hashkeydid.DefaultPlatONUrl, 
+		hashkeydid.DefaultDIDContractAddr, 
+		hashkeydid.DefaultDIDResolverContractAddr,
+	)
+	// opts parameter is optional, it's for search at block number 16513266
+	opts := &bind.CallOpts{BlockNumber: new(big.Int).SetUint64(16513266)}
+	addr, err := core.GetBlockChainAddress(opts, 1222, 1)
+}
+
+```
 {% endtab %}
 {% endtabs %}
 
