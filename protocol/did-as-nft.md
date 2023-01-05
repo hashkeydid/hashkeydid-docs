@@ -6,7 +6,7 @@ HashKey DID contract is based on [ERC721](https://eips.ethereum.org/EIPS/eip-721
 
 Metadata is a json string which includes the basic data of an NFT.
 
-The metadata can be found by `curl https://api.hashkey.id/did/api/nft/metadata/{tokenId}`. // TODO metadata developer
+The metadata can be found by `curl https://api.hashkey.id/did/api/nft/metadata/{tokenId}`.
 
 ```json
 {
