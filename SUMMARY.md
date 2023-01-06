@@ -29,7 +29,13 @@
 
 ## How to
 
-* [Issue a credential](how-to/issuer-a-credential.md)
+* [Become an issuer](how-to/become-an-issuer.md)
+* [Edit issuer info](how-to/edit-issuer-info.md)
+* [Issue a credential](how-to/issuer-a-credential/README.md)
+  * [Step 1: Deploy a contract](how-to/issuer-a-credential/step-1-deploy-a-contract.md)
+  * [Step 2: Create a credential and submit](how-to/issuer-a-credential/step-2-create-a-credential-and-submit.md)
+  * [Step 3: Issue a credential](how-to/issuer-a-credential/step-3-issue-a-credential.md)
+* [Manage your credential](how-to/manage-your-credential.md)
 * [Become a KYC provider](how-to/become-a-kyc-provider.md)
 
 ## Support
