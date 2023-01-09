@@ -10,7 +10,7 @@
   * [Register](developers/guides/register.md)
   * [Query](developers/guides/query.md)
   * [Libraries](developers/guides/libraries.md)
-  * [Credntial API Rule](developers/guides/credential-api-rule.md)
+  * [Credential API Rule](developers/guides/credential-api-rule.md)
 * [API Reference](developers/api-reference/README.md)
   * [OpenAPI](developers/api-reference/openapi.md)
 
