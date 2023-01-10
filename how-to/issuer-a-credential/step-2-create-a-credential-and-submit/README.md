@@ -35,7 +35,7 @@ Instructions for each field:
 | Issue amount            | <p>There will be two options: limited and unlimited amounts.</p><p>If you set the amount limit, you need to pay gas fee when you issue the credential.</p>                                                                                                                              |
 | Gas fee payer           | <p>When users claim this credential, the roles will be responsible to pay gas fee for the claiming process. </p><p></p><p>There will be two options: Users and HashKey DID Platform. </p><p><strong>Please ensure you have communicated with DID platform for this option.</strong></p> |
 | Claim period            | The time interval during which the users can claim the credential.                                                                                                                                                                                                                      |
-| Credential claim rules  | Set up the credential claim rules. You can add up to 10 claim rules per Credential. please refer to '[Set claim rules](claim-rules.md)' for details.                                                                                                                                    |
+| Credential claim rules  | Set up the credential claim rules. You can add up to 10 claim rules per Credential. please refer to '[Claim rules](claim-rules.md)' for details.                                                                                                                                        |
 
 
 
