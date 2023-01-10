@@ -47,4 +47,4 @@ After you fill all the required information, tick the checkbox and click ‘Depl
 
 Then you have to wait for a while for the transaction to be confirmed on the blockchain. Once the transaction is completed, you will see your contract at the **Contracts** page.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Issuer Management - Contracts</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Issuer Management - Contracts</p></figcaption></figure>

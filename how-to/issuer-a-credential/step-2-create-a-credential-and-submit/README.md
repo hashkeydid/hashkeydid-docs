@@ -8,14 +8,14 @@ description: >-
 
 First, go to the **Credential MGT page** in the issuer management.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then click '**Create Credential**'.
 
 Choose the contract that you created before, we now only support PlatON and Klaytn.\
 Then click '**Next**', it will lead you to the creating page.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Create Credential - choose a contract</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Create Credential - choose a contract</p></figcaption></figure>
 
 On the creating page, you need to upload the credential file and fill in the corresponding fields. Below is an instruction about how to fill the form correctly.
 
@@ -35,17 +35,7 @@ Instructions for each field:
 | Issue amount            | <p>There will be two options: limited and unlimited amounts.</p><p>If you set the amount limit, you need to pay gas fee when you issue the credential.</p>                                                                                                                              |
 | Gas fee payer           | <p>When users claim this credential, the roles will be responsible to pay gas fee for the claiming process. </p><p></p><p>There will be two options: Users and HashKey DID Platform. </p><p><strong>Please ensure you have communicated with DID platform for this option.</strong></p> |
 | Claim period            | The time interval during which the users can claim the credential.                                                                                                                                                                                                                      |
-| Credential claim rules  | <p>There are three types of rules: Own a Hashket DID, Whitelist and Custom API. You can choose any one, two or all of them. And you need to describe the rule in detail.</p><p></p><p>We will explain each rule below.</p>                                                              |
-
-
-
-### Description of the each claim rule:
-
-| Claim Rules       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Own a HashKey DID | <p><em>For each credential, this rule can only be used once.</em> </p><p></p><p>This rule means only users with a HashKey DID are eligible to claim the credential.</p>                                                                                                                                                                                                                                                                           |
-| White list        | <p><em>For each credential, this rule can only be used once.</em></p><p></p><p>This rule means only users in the whitelist are able to claim the credential. The whitelist can only be set after adding this rule.</p><p>If any White list rule is added, The whitelist can be added after the credential is created.<br><br>For how to add a whitelist, please refer to '<a href="../manage-your-credential.md#4.-whitelist">whitelist</a>'.</p> |
-| Custom API        | <p><em>For each credential, this rule can be used multiple times.</em></p><p></p><p>This rule means only users who meet the API requirements are able to claim the credential.</p><p></p><p>In the Custom API rules, there will be an API test module: enter a Valid address to test whether this API is usable.</p><p></p><p>For API writing methods, please refer to here for details.</p>                                                      |
+| Credential claim rules  | Set up the credential claim rules. You can add up to 10 claim rules per Credential. please refer to '[Set claim rules](claim-rules.md)' for details.                                                                                                                                    |
 
 
 

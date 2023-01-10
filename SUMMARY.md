@@ -6,11 +6,11 @@
 
 ## Developers
 
-* [Guides](developers/guides/README.md)
-  * [Register](developers/guides/register.md)
-  * [Query](developers/guides/query.md)
-  * [Libraries](developers/guides/libraries.md)
-  * [Credential API Rule](developers/guides/credential-api-rule.md)
+* [Guides](developers/become-a-kyc-provider/README.md)
+  * [Register](developers/become-a-kyc-provider/register.md)
+  * [Query](developers/become-a-kyc-provider/query.md)
+  * [Libraries](developers/become-a-kyc-provider/libraries.md)
+  * [Credential API Rule](developers/become-a-kyc-provider/credential-api-rule.md)
 * [API Reference](developers/api-reference/README.md)
   * [OpenAPI](developers/api-reference/openapi.md)
 
@@ -34,10 +34,10 @@
 * [Edit issuer info](how-to/edit-issuer-info.md)
 * [Issue a credential](how-to/issuer-a-credential/README.md)
   * [Step 1: Deploy a contract](how-to/issuer-a-credential/step-1-deploy-a-contract.md)
-  * [Step 2: Create a credential and submit](how-to/issuer-a-credential/step-2-create-a-credential-and-submit.md)
+  * [Step 2: Create a credential and submit](how-to/issuer-a-credential/step-2-create-a-credential-and-submit/README.md)
+    * [Claim rules](how-to/issuer-a-credential/step-2-create-a-credential-and-submit/claim-rules.md)
   * [Step 3: Issue a credential](how-to/issuer-a-credential/step-3-issue-a-credential.md)
-* [Manage your credential](how-to/manage-your-credential.md)
-* [Become a KYC provider](how-to/become-a-kyc-provider.md)
+* [Manage your credentials](how-to/manage-your-credential.md)
 
 ## Support
 

@@ -1,4 +1,4 @@
-# Manage your credential
+# Manage your credentials
 
 You can manage your credential at the **Credentials** and **Drafts** page. And there are several functions you can use.
 
@@ -40,7 +40,7 @@ The uploaded file should not contain headers. Only one 0x address each separated
 
 After adding the whitelist, the pop-up window will appear as shown below.&#x20;
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Check the whitelist</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Check the whitelist</p></figcaption></figure>
 
 **Add**: \
 You can still continue to add to whitelist multiple times at any time, however each addition will be considered a new addition and you can only import one file at a time.
