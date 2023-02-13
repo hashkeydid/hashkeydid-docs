@@ -202,7 +202,7 @@ Get transaction details.
     data?: string
     // transaction pending status.
     pending?: boolean
-    // 0 as success and 1 as fail
+    // 0 as fail and 1 as success
     status?: integer
   }
   msg?: string
