@@ -5,11 +5,14 @@
 The format for a DID name requires a length between 5 and 54 characters, and only allows the use of lowercase letters a-z and digits 0-9.
 
 ```solidity
-function mint(address to, string memory did) public;
+function mint(address to, uint256 expiredTimestamp, string memory did, bytes memory evidence, string calldata avatar) public;
 ```
 
 * to: DID address
+* expiredTimestamp: the expired time of the evidence
 * did: DID name
+* evidence: the signature signed by HashKey DID
+* avatar: the url of avatar
 
 #### Add authorization address
 

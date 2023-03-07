@@ -26,6 +26,7 @@
   * [BasicInfo](protocol/contract-api-reference/basicinfo.md)
   * [PublicResolver](protocol/contract-api-reference/publicresolver.md)
   * [KYC](protocol/contract-api-reference/kyc.md)
+  * [LayerZero](protocol/contract-api-reference/layerzero.md)
   * [Credential](protocol/contract-api-reference/credential.md)
 
 ## How to

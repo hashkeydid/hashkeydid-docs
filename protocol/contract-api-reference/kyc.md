@@ -1,7 +1,5 @@
 # KYC
 
-KYC stands for Know Your Customer. It is a mandatory process that involves identifying and verifying the identity of a client when they open an account and periodically over time.
-
 #### Add KYC
 
 Add KYC information obtained from a KYC provider.

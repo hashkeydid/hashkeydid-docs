@@ -2,7 +2,7 @@
 
 ## Introduce
 
-KYC means Know Your Customer and sometimes Know Your Client. KYC or KYC check is the useful process of identifying and verifying the client's identity when opening an account and periodically over time. Country to the traditional business industry, KYC certification is optional in HashKey DID.
+KYC stands for Know Your Customer, and sometimes Know Your Client. KYC, or KYC check, is a useful process for identifying and verifying a client's identity when opening an account and periodically over time. In contrast to the traditional business industry, KYC certification is optional in HashKey DID.
 
 ## Architecture
 
