@@ -8,7 +8,7 @@ HashKey DID is a decentralized storage-featured Web 3.0 identifier that is under
 
 #### Is HashKey DID decentralized?
 
-Yes, The main contracts are deployed on [PlatON](https://www.platon.network) and the other credential contracts are deployed on Ethereum or other blockchains.
+Yes, the main contracts are deployed on [PlatON](https://www.platon.network) and the other credential contracts are deployed on Ethereum or other blockchains.
 
 #### What can I do with HashKey DID?
 

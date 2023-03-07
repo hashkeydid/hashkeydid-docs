@@ -1,6 +1,6 @@
 # LayerZero
 
-#### sync
+#### Sync
 
 Synchronize DID information to the destination chain through LayerZero protocol, including DID, avatar, and KYC information.
 
@@ -22,7 +22,7 @@ function sync(Payload memory _payload, uint16 _dstChainId) public;
 * \_payload: DID infomation
 * \_dstChainId: destination chain id defined by [LayerZero](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids)
 
-#### mint DID LayerZero
+#### Mint DID LayerZero
 
 Minting a DID using information obtained from a sync event can only be invoked by the LayerZero endpoint or the HashKey DID endpoint (when the chain is not yet supported by LayerZero).
 

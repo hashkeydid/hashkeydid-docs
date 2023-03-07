@@ -18,6 +18,7 @@
 
 * [Resolver](protocol/resolver.md)
 * [KYC](protocol/kyc.md)
+* [Sync](protocol/sync.md)
 * [Credential](protocol/credential.md)
 * [DID as NFT](protocol/did-as-nft.md)
 * [Deployment](protocol/deployments.md)

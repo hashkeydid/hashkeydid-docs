@@ -1,6 +1,6 @@
 # Credential
 
-Introduce
+### Introduce
 
 DID users want to publish commemorative badges or NFTs for an event, or they want to publish credentials for someone who achieved an accomplishment.
 
