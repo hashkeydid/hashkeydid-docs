@@ -25,5 +25,5 @@ function getKYCInfo(uint256 tokenId, address KYCProvider, uint256 KYCId);
 ```
 
 * tokenId: DID token id
-* KYCProvider: KYC provider address(you can find the provider list)
+* KYCProvider: KYC provider address(you can find the [provider list](../kyc.md#kyc-providers))
 * KYCId: KYC level
