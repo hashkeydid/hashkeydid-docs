@@ -2,7 +2,7 @@
 
 #### Mint DID
 
-DID name format require length between 5-54, only allow numbers between 0-9 and alphabet between a-z.
+The format for a DID name requires a length between 5 and 54 characters, and only allows the use of lowercase letters a-z and digits 0-9.
 
 ```solidity
 function mint(address to, string memory did) public;
@@ -13,7 +13,7 @@ function mint(address to, string memory did) public;
 
 #### Add authorization address
 
-Authorize DID to the address so that the address can view DID information or log in other system on behalf of you.
+Authorize a DID to an address so that the address can view your DID information or log in to other systems on your behalf.
 
 ```solidity
 function addAuth(uint256 tokenId, address addr) public;
@@ -24,7 +24,7 @@ function addAuth(uint256 tokenId, address addr) public;
 
 #### Remove authorization address
 
-Remove address that you authorized before.
+Remove the address that you had previously authorized.
 
 ```solidity
 function removeAuth(uint256 tokenId, address addr) public;

@@ -2,21 +2,11 @@
 
 ### Abstract
 
-Resolver contract records the DID user personal information (eg: `name`, `avatar`,`blockchain address`). DID user can display the personal information by resolver contract. all of the information is optional.
+The Resolver contract stores the personal information of a DID user, such as their name, avatar, and blockchain addresses. The DID user can choose to store their personal information through the Resolver contract, and all of the information fields are optional.
 
 ### Reverse resolution
 
-We are familiar with DNS resolution which is to resolve the domain name to the IP address, and reverse resolution means website IP address be resolved to the domain name of the website. The reverse resolution of DID is similar to the reverse resolution of DNS in that it supports associating human-readable names with blockchain addresses and resolving machine-readable identifiers to human-readable identifiers.
-
-#### Set reverse resolution
-
-DID reverse resolution information are stored in the DID registry contract. When a user register DID, the mapping relationship between DID and user address will be recorded in the `tokenId2Did` mapping table. Although we retain the mapping relationship, it is up to the user to decide whether to use the reverse resolution. When the user needs to use reverse resolution, he can call the following function in the Resolver contract to turn on, which is unavailable by default.
-
-```solidity
-function setReverse(bool isReverse) public;
-```
-
-* isReverse: true/false
+We are familiar with DNS resolution, which resolves domain names to IP addresses, and reverse resolution, which resolves IP addresses to domain names. Similarly, the reverse resolution of DID allows for the association of human-readable names with blockchain addresses and the resolution of machine-readable identifiers to human-readable identifiers.
 
 #### Get reverse resolution
 

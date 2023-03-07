@@ -2,7 +2,7 @@
 
 #### Check DID Name
 
-Check if DID name is claimed or not.
+Check whether a DID name has been claimed or not.
 
 ```solidity
 function didClaimed(string memory did) public view returns (bool);
@@ -10,7 +10,9 @@ function didClaimed(string memory did) public view returns (bool);
 
 * did: DID name
 
-Verify DID format DID name format require length between 5-54, only allow numbers between 0-9 and alphabet between a-z.
+#### Verify DID Format
+
+To verify the DID format, ensure that the DID name has a length between 5 and 54 characters, and only contains the characters 0-9 and lowercase letters a-z.
 
 ```solidity
 function verifyDIDFormat(string memory did) public pure returns (bool);
@@ -20,7 +22,7 @@ function verifyDIDFormat(string memory did) public pure returns (bool);
 
 #### Check address
 
-Check if address is claimed or not.
+Check whether an address has been claimed or not.
 
 ```solidity
 function addrClaimed(address addr) public view returns(bool);
@@ -30,7 +32,7 @@ function addrClaimed(address addr) public view returns(bool);
 
 #### Get DID
 
-Get DID name by token id.
+Retrieve the DID name by token id.
 
 ```solidity
 function tokenId2Did(uint256 tokenId) public view returns (string memory);
@@ -40,7 +42,7 @@ function tokenId2Did(uint256 tokenId) public view returns (string memory);
 
 #### Get DID tokenId
 
-Get token id by DID name.
+Retrieve the token id by DID name.
 
 ```solidity
 function did2TokenId(string memory did) public view returns (uint256);
@@ -50,7 +52,7 @@ function did2TokenId(string memory did) public view returns (uint256);
 
 #### Get issuer address
 
-Get issuer address by DeedGrain contract address.
+Retrieve the issuer address by DeedGrain contract address.
 
 ```solidity
 function deedGrainAddrToIssur(address dgAddr) public view returns(address);
@@ -60,7 +62,7 @@ function deedGrainAddrToIssur(address dgAddr) public view returns(address);
 
 #### Get all authorization addresses
 
-Get all authorization addresses for specific DID.
+Retrieve all authorization addresses for specific DID.
 
 ```solidity
 function getAuthorizedAddrs(uint256 tokenId) public view returns (address[] memory);
@@ -70,7 +72,7 @@ function getAuthorizedAddrs(uint256 tokenId) public view returns (address[] memo
 
 #### Check if address authorized
 
-Check if the address is authorized or not.
+Check whether a DID has been authorized to the address or not.
 
 ```solidity
 function isAddrAuthorized(uint256 tokenId, address addr) public view returns (bool);

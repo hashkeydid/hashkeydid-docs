@@ -2,7 +2,7 @@
 
 #### Set Transferable
 
-Credential could be transferable or non-transferable. The function can reverse it. Can only be invoked by issuer or HashKey did.
+Credential could be transferable or non-transferable. The function can reverse it. Can only be invoked by issuer or HashKey DID.
 
 ```solidity
 function reverseTransferable() public onlyControllers;
@@ -10,7 +10,7 @@ function reverseTransferable() public onlyControllers;
 
 #### Set Supply
 
-Credential could be fixed supply. Credential is [ERC-1155](https://eips.ethereum.org/EIPS/eip-1155) token.Can only be invoked by issuer or HashKey did.
+The supply of a credential can be fixed. Can only be invoked by issuer or HashKey DID.
 
 ```solidity
 function setSupply(uint256 tokenId, uint256 supply) public onlyControllers;
@@ -19,21 +19,9 @@ function setSupply(uint256 tokenId, uint256 supply) public onlyControllers;
 * tokenId: DID token id
 * supply: max supply
 
-#### Set BaseURI
-
-Set token BaseURI. Can only be invoked by issuer.
-
-```solidity
-function setBaseUri(string memory baseUri) public;
-```
-
-* baseUri: [ERC-1155](https://eips.ethereum.org/EIPS/eip-1155) base URI
-
 #### Get URI
 
-return BaseURI/tokenID. For example:\
-if: BaseURI = https://api.hashkey-qa.id/did/api/nft/metadata/ && tokenId = 1\
-then: URI = https://api.hashkey-qa.id/did/api/nft/metadata/1
+Retrieve the tokenURI (i.e., the link to the metadata) associated with a given tokenId.
 
 ```solidity
 function uri(uint256 tokenId) public view override returns (string memory);
@@ -43,14 +31,14 @@ function uri(uint256 tokenId) public view override returns (string memory);
 
 #### Issue DeedGrain
 
-Institution get evidence signed by HashKey DID. Use the evidence to issue DeedGrain.
+An institution can obtain evidence signed by a HashKey DID and use that evidence to issue DeedGrain.
 
 ```solidity
 function issueDG (string memory _name, string memory _symbol, string memory _baseUri, bytes memory _evidence, bool _transferable) public;
 ```
 
-* \_name: ERC1155 NFT name
-* \_symbol: ERC1155 NFT symbol
-* \_baseUri: ERC1155 NFT baseUri
-* \_evidence: signature by HashKey DID
+* \_name: credential name
+* \_symbol: credential symbol
+* \_baseUri: credential baseUri
+* \_evidence: signature signed by HashKey DID
 * \_transferable: whether DeedGrain is transferable
