@@ -51,7 +51,7 @@ __This rule means only users who meet the API requirements are able to claim the
 ****This is an optional field. If you have an additional link for this rule, please add them here.
 
 **API Endpoint:**\
-****This is a required field. You need to enter a full API URL. For API writing methods, please refer to '[Credential API Rule](../../../developers/become-a-kyc-provider/credential-api-rule.md)' for details.
+****This is a required field. You need to enter a full API URL. For API writing methods, please refer to '[Credential API Rule](../../../developers/guides/credential-api-rule.md)' for details.
 
 **API Test Module:** \
 ****In the Custom API rules, we also provide the API Test Module. You could enter an address to test whether this API is usable. We currently only support addresses starting with 0x.

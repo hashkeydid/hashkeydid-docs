@@ -6,11 +6,11 @@
 
 ## Developers
 
-* [Guides](developers/become-a-kyc-provider/README.md)
-  * [Register](developers/become-a-kyc-provider/register.md)
-  * [Query](developers/become-a-kyc-provider/query.md)
-  * [Libraries](developers/become-a-kyc-provider/libraries.md)
-  * [Credential API Rule](developers/become-a-kyc-provider/credential-api-rule.md)
+* [Guides](developers/guides/README.md)
+  * [Register](developers/guides/register.md)
+  * [Query](developers/guides/query.md)
+  * [Libraries](developers/guides/libraries.md)
+  * [Credential API Rule](developers/guides/credential-api-rule.md)
 * [API Reference](developers/api-reference/README.md)
   * [OpenAPI](developers/api-reference/openapi.md)
 
