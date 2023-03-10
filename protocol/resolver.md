@@ -1,8 +1,6 @@
 # Resolver
 
-### Introduce
-
-Resolver contract records the DID user personal information (eg: `name`, `avatar`, `blockchain address`). DID user can display the personal information by resolver contract. all of the information is optional.
+Resolver records the DID user personal information (eg: `name`, `avatar`, `blockchain address`). DID user can display the personal information by resolver contract. all of the information is optional.
 
 ### Architecture
 
