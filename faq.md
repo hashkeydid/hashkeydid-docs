@@ -26,7 +26,7 @@ Go to [dapp](https://app.hashkey.id/#/) to claim your did.
 
 #### How much will I spend on register?
 
-It's free, HashKey authority will cover gas fee for users.
+Gas only. Users just need pay gas for transactions to register their DIDs without any register fee.
 
 #### Can I register more than one HashKey DID account?
 
