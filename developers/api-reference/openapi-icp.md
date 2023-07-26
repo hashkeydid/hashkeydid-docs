@@ -32,6 +32,8 @@ Get DID info
     did?: string
 	// Address for user
     addr?: string
+	// Principal for user
+    principal?: string
 	// Token ID for user in DID nft contract
     tokenId?: string
     userInfo: {
@@ -48,12 +50,6 @@ Get DID info
       headUrl?: string
       photoParts?: string
     }
-	// User following count
-    followingTotal?: integer
-	// User follower count
-    followerTotal?: integer
-	// Time for DID claimed at
-    claimAt?: string
   }
   msg?: string
 }
