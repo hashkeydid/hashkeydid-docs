@@ -65,6 +65,7 @@ Get DID info
   id?: integer
   did?: string
   addr?: string
+  principal?: string
   tokenId?: string
   userInfo: {
     userId?: integer
@@ -80,11 +81,5 @@ Get DID info
   }
   createdAt?: string
   updatedAt?: string
-  status?: string
-  loginToken?: string
-  followingTotal?: integer
-  followerTotal?: integer
-  claimAt?: string
-  chainName?: string
 }
 ```
