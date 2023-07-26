@@ -13,6 +13,7 @@
   * [Credential API Rule](developers/guides/credential-api-rule.md)
 * [API Reference](developers/api-reference/README.md)
   * [OpenAPI](developers/api-reference/openapi.md)
+  * [OpenAPI For Dfinity](developers/api-reference/openapi-icp.md)
 
 ## Protocol
 
